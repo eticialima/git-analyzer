@@ -1,0 +1,15 @@
+[project]
+name = "git-analyzer"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["rich", "typer"]
+
+[project.scripts]
+git-analyzer = "git_analyzer.main:app"
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
